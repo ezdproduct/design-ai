@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { useEditor } from '@/context/EditorContext';
+import React, { useState } from 'react';
 import ElementsPanel from '@/components/panels/ElementsPanel';
 import TemplatesPanel from '@/components/panels/TemplatesPanel';
 import MaterialPanel from '@/components/panels/MaterialPanel';
+import MyMaterialPanel from '@/components/panels/MyMaterialPanel';
 import LayersPanel from '@/components/panels/LayersPanel';
 import TextPanel from '@/components/panels/TextPanel';
 import {
@@ -75,6 +75,8 @@ const LeftSidebar = () => {
             <LayersPanel />
           ) : activeMenu === 'material' ? (
             <MaterialPanel />
+          ) : activeMenu === 'myMaterial' ? (
+            <MyMaterialPanel />
           ) : (
             <div className="p-4">
               <h2 className="text-lg font-bold mb-4">

@@ -28,9 +28,9 @@ export default class AddBaseTypePlugin implements IPluginTempl {
   addBaseType(
     item: fabric.Object,
     optons?: {
-      event: DragEvent;
-      scale: boolean;
-      center: boolean;
+      event?: DragEvent;
+      scale?: boolean;
+      center?: boolean;
     }
   ) {
     const { event = false, scale = false, center = true } = optons || {};
