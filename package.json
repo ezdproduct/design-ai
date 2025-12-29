@@ -39,7 +39,8 @@
     "vue3-lazyload": "^0.3.6"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "next-editor"
   ],
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
