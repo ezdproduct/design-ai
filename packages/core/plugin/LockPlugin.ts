@@ -49,7 +49,7 @@ export default class LockPlugin implements IPluginTempl {
 
   init() {
     const imgEl = document.createElement('img');
-    imgEl.src = lockImg;
+    imgEl.src = (lockImg as any).src || lockImg;
     const that = this;
     function renderIcon(
       ctx: CanvasRenderingContext2D,

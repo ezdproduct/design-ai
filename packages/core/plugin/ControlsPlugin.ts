@@ -39,10 +39,10 @@ function drawImg(
 // 中间横杠
 function intervalControl() {
   const verticalImgIcon = document.createElement('img');
-  verticalImgIcon.src = verticalImg;
+  verticalImgIcon.src = (verticalImg as any).src || verticalImg;
 
   const horizontalImgIcon = document.createElement('img');
-  horizontalImgIcon.src = horizontalImg;
+  horizontalImgIcon.src = (horizontalImg as any).src || horizontalImg;
 
   function renderIcon(
     ctx: CanvasRenderingContext2D,
@@ -108,7 +108,7 @@ function intervalControl() {
 // 顶点
 function peakControl() {
   const img = document.createElement('img');
-  img.src = edgeImg;
+  img.src = (edgeImg as any).src || edgeImg;
 
   function renderIconEdge(
     ctx: CanvasRenderingContext2D,
@@ -195,7 +195,7 @@ function peakControl() {
 // 旋转
 function rotationControl() {
   const img = document.createElement('img');
-  img.src = rotateImg;
+  img.src = (rotateImg as any).src || rotateImg;
   function renderIconRotate(
     ctx: CanvasRenderingContext2D,
     left: number,

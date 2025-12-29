@@ -111,7 +111,7 @@ class PolygonModifyPlugin implements IPluginTempl {
   constructor(public canvas: fabric.Canvas, public editor: IEditor) {
     this.isEdit = false;
     const img = document.createElement('img');
-    img.src = edgeImg;
+    img.src = (edgeImg as any).src || edgeImg;
     this.img = img;
     this.init();
   }
