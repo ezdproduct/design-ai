@@ -84,5 +84,6 @@
     "overrides": {
       "@jridgewell/gen-mapping": "0.3.5"
     }
-  }
+  },
+  "packageManager": "pnpm@10.21.0"
 }
