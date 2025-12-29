@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd next-editor && pnpm build",
+  "buildCommand": "pnpm --filter next-editor build",
   "outputDirectory": "next-editor/.next",
   "installCommand": "pnpm install",
   "framework": null
