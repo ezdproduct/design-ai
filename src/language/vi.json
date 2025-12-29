@@ -1,0 +1,266 @@
+{
+  "bgSeting": {
+    "size": "Kích thước",
+    "color": "Màu sắc",
+    "colorMacthing": "Phối màu",
+    "width": "Chiều rộng",
+    "height": "Chiều cao"
+  },
+  "flip": {
+    "x": "Lật ngang",
+    "y": "Lật dọc"
+  },
+  "attrSeting": {
+    "group": "Nhóm",
+    "unGroup": "Rã nhóm",
+    "flip": {
+      "name": "Lật",
+      "x": "Lật ngang",
+      "y": "Lật dọc"
+    },
+    "align": {
+      "name": "Căn lề",
+      "left": "Căn trái",
+      "centerX": "Căn giữa ngang",
+      "right": "Căn phải",
+      "top": "Căn trên",
+      "bottom": "Căn dưới",
+      "centerY": "Căn giữa dọc",
+      "averageX": "Phân phối ngang",
+      "averageY": "Phân phối dọc"
+    },
+    "centerAlign": {
+      "name": "Căn giữa",
+      "centerX": "Căn giữa ngang",
+      "center": "Căn giữa hai chiều",
+      "centerY": "Căn giữa dọc"
+    }
+  },
+  "color": "Màu sắc",
+  "textFloat": "Số thập phân",
+  "templates": "Mẫu",
+  "elements": "Thành phần",
+  "font_style": "Văn bản",
+  "background": "Nền",
+  "grid": "Lưới",
+  "placeholder": "Vui lòng nhập",
+  "common_elements": "Thành phần cơ bản",
+  "draw_elements": "Vẽ thành phần",
+  "code_img": "Mã vạch/QR",
+  "background_texture": "Kết cấu nền",
+  "picture": "Hình ảnh",
+  "everything_is_fine": "Mọi thứ ổn định",
+  "everything_goes_well": "Mọi việc thuận lợi",
+  "cartoon": "Hoạt hình",
+  "default_size": "Kích thước có sẵn",
+  "preview": "Xem trước",
+  "save": {
+    "empty": "Xóa trống",
+    "down": "Tải xuống",
+    "save_my_spase": "Lưu vào không gian của tôi",
+    "save_as_picture": "Hình ảnh PNG",
+    "save_as_svg": "Hình ảnh SVG",
+    "copy_to_clipboard": "Sao chép vào bộ nhớ tạm",
+    "copy_to_clipboardstr": "Sao chép chuỗi vào bộ nhớ tạm",
+    "save_as_json": "Lưu dưới dạng JSON"
+  },
+  "layers": "Lớp",
+  "my_spase": {
+    "remove_templ": "Xóa mẫu",
+    "remove_templTip": "Bạn có chắc chắn muốn xóa mẫu này không?",
+    "remove_file_type": "Xóa thư mục",
+    "remove_file_type_Tip": "Bạn có chắc chắn muốn xóa không?"
+  },
+  "title_template": "Mẫu tiêu đề",
+  "insert_svg": "Chèn phần tử SVG",
+  "select_svg": "Chọn tệp SVG",
+  "please_choose": "Vui lòng chọn",
+  "string": "Chuỗi",
+  "file": "Tệp",
+  "importFiles": {
+    "file": "Tệp",
+    "createDesign": {
+      "title": "Tạo thiết kế",
+      "customSize": "Kích thước tùy chỉnh",
+      "systemSize": "Kích thước đề xuất",
+      "width": "Chiều rộng",
+      "height": "Chiều cao",
+      "create": "Xác nhận"
+    },
+    "importFiles": "Nhập tệp"
+  },
+  "select_json": "Chọn tệp JSON",
+  "repleaceImg": "Thay thế hình ảnh",
+  "cropperImg": "Cắt hình ảnh",
+  "createClip": "Thêm mặt nạ cắt",
+  "removeClip": "Xóa mặt nạ cắt",
+  "polygonClip": "Đa giác",
+  "rectClip": "Hình chữ nhật",
+  "circleClip": "Hình tròn",
+  "triangleClip": "Hình tam giác",
+  "polygonClipInverted": "Đa giác (ngược)",
+  "rectClipInverted": "Hình chữ nhật (ngược)",
+  "circleClipInverted": "Hình tròn (ngược)",
+  "triangleClipInverted": "Hình tam giác (ngược)",
+  "waterMark": {
+    "text": "Dấu bản quyền",
+    "modalTitle": "Cấu hình dấu bản quyền",
+    "setting": {
+      "name": "Tên dấu",
+      "size": "Kích thước",
+      "color": "Màu sắc",
+      "angle": "Góc xoay",
+      "position": {
+        "label": "Vị trí",
+        "lt": "Trên cùng bên trái",
+        "rt": "Trên cùng bên phải",
+        "lb": "Dưới cùng bên trái",
+        "rb": "Dưới cùng bên phải",
+        "full": "Toàn màn hình"
+      }
+    }
+  },
+  "material": {
+    "cartoon": "Nguyên liệu"
+  },
+  "filters": {
+    "simple": "Bộ lọc đơn giản",
+    "complex": "Bộ lọc phức tạp",
+    "Invert": "Đảo ngược",
+    "Sepia": "Nâu đen",
+    "BlackWhite": "Đen trắng",
+    "Brownie": "Brownie",
+    "Vintage": "Cổ điển",
+    "Kodachrome": "Kodachrome",
+    "technicolor": "Technicolor",
+    "Polaroid": "Polaroid",
+    "Grayscale": "Thang độ xám",
+    "GrayscaleList": {
+      "average": "Thông thường",
+      "lightness": "Trung bình",
+      "luminosity": "Sáng"
+    },
+    "RemoveColor": "Loại bỏ màu",
+    "Brightness": "Độ sáng",
+    "Contrast": "Độ tương phản",
+    "Saturation": "Độ bão hòa",
+    "Vibrance": "Độ rực rỡ",
+    "HueRotation": "Sắc độ",
+    "Noise": "Nhiễu",
+    "Pixelate": "Điểm ảnh hóa",
+    "Blur": "Làm mờ",
+    "Gamma": "Điều chỉnh"
+  },
+  "quick": {
+    "del": "Xóa",
+    "copy": "Sao chép",
+    "lock": "Khóa",
+    "unlock": "Mở khóa",
+    "hide": "Ẩn",
+    "editPoly": "Chỉnh sửa đa giác"
+  },
+  "insertFile": {
+    "insert": "Chèn",
+    "insert_picture": "Chèn hình ảnh",
+    "insert_SVG": "Chèn phần tử SVG",
+    "insert_SVGStr": "Chèn ký tự SVG",
+    "insert_PSD": "Chèn PSD",
+    "insert_SVGStr_placeholder": "Vui lòng nhập chuỗi SVG",
+    "modal_tittle": "Vui lòng nhập"
+  },
+  "history": {
+    "revocation": "Hoàn tác",
+    "redo": "Làm lại"
+  },
+  "upload_background": "Tải lên hình nền",
+  "mouseMenu": {
+    "layer": "Quản lý lớp",
+    "copy": "Sao chép",
+    "delete": "Xóa",
+    "group": "Kết hợp",
+    "unGroup": "Hủy kết hợp",
+    "up": "Lên một lớp",
+    "down": "Xuống một lớp",
+    "upTop": "Lên trên cùng",
+    "downTop": "Xuống dưới cùng",
+    "center": "Căn giữa hai chiều"
+  },
+  "alert": {
+    "loading_fonts": "Đang tải phông chữ, vui lòng chờ...",
+    "loading_fonts_failed": "Tải phông chữ thất bại, vui lòng thử lại!",
+    "loading_fonts_success": "Tải phông chữ thành công!",
+    "loading_data": "Đang tải dữ liệu...",
+    "select_image": "Vui lòng chọn hình ảnh nền",
+    "select_file": "Vui lòng chọn tệp",
+    "copied_sucessful": "Sao chép thành công",
+    "fail_copy": "Sao chép thất bại"
+  },
+  "scenary_x": "Phương án {number}",
+  "red_book_vertical": "Sách đỏ dọc",
+  "red_book_horizontal": "Sách đỏ ngang",
+  "phone_wallpaper": "Hình nền điện thoại",
+  "attributes": {
+    "id": "Định danh",
+    "linkData": "Liên kết",
+    "font": "Phông chữ",
+    "align": "Căn lề",
+    "bold": "In đậm:",
+    "italic": "In nghiêng:",
+    "underline": "Gạch chân:",
+    "stroke": "Đường viền",
+    "swipe_up": "Gạch trên:",
+    "line_height": "Chiều cao dòng",
+    "char_spacing": "Khoảng cách chữ",
+    "exterior": "Ngoại hình",
+    "angle": "Xoay",
+    "left": "Trục X",
+    "top": "Trục Y",
+    "opacity": "Độ trong suốt",
+    "shadow": "Đổ bóng",
+    "blur": "Mờ",
+    "offset_x": "Lệch X",
+    "offset_y": "Lệch Y",
+    "borderRadiusX": "Bán kính bo góc ngang",
+    "borderRadiusY": "Bán kính bo góc dọc",
+    "rx_ry": "Bán kính"
+  },
+  "setSizeTip": "Điều chỉnh kích thước Canvas",
+  "tip": "Gợi ý",
+  "clearTip": "Bạn có chắc chắn muốn xóa sạch không?",
+  "replaceTip": "Bạn có chắc chắn muốn thêm vào Canvas không?",
+  "ok": "Xác nhận",
+  "cancel": "Hủy",
+  "cleanUp": "Dọn dẹp",
+  "login": {
+    "title": "Chào mừng",
+    "welcome": "Chào mừng đến với Kuaitu",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "identifier": "Tên đăng nhập",
+    "username": "Tên đăng nhập",
+    "password": "Mật khẩu",
+    "email": "Email",
+    "identifierValidate": "Vui lòng nhập tên đăng nhập",
+    "passwordValidate": "Vui lòng nhập mật khẩu trên 6 ký tự",
+    "emailValidate": "Vui lòng nhập địa chỉ email hợp lệ",
+    "logoutTip": "Bạn có chắc chắn muốn đăng xuất không?",
+    "logoutSuccessTip": "Đăng xuất thành công"
+  },
+  "myMaterial": {
+    "uploadBtn": "Tải lên nguyên liệu"
+  },
+  "admin": {
+    "btnTitle": "Quản lý",
+    "setToken": "Cài đặt Token",
+    "save": "Lưu",
+    "create": "Thêm mới",
+    "addTempl": "Thêm mẫu mới",
+    "addTemplPlaceholder": "Vui lòng nhập tên mẫu",
+    "addTemplCheckTip": "Tên mẫu không được để trống"
+  },
+  "mine": "Của tôi",
+  "batch": "Hàng loạt",
+  "already_at_bottom": "Đã hết danh sách",
+  "online_design_tool": "Công cụ thiết kế trực tuyến",
+  "create_design": "Tạo thiết kế mới"
+}

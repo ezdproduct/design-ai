@@ -14,11 +14,13 @@
           <logo></logo>
           <!-- 导入 -->
           <Divider type="vertical" />
-          在线设计工具
+          {{ $t('online_design_tool') }}
         </div>
 
         <div class="right">
-          <Button type="primary" to="/" size="smail" target="_blank">新建设计</Button>
+          <Button type="primary" to="/" size="smail" target="_blank">
+            {{ $t('create_design') }}
+          </Button>
           <Divider type="vertical" />
           <a href="https://pro.kuaitu.cc/" target="_blank">
             <img width="15" :src="proIcon" alt="vue-fbric-editor" />
@@ -40,7 +42,7 @@
             search
             v-model="filters.name.$containsi"
             enter-button
-            placeholder="请输入关键词"
+            :placeholder="$t('placeholder')"
             @on-search="search"
           />
           <TagSelect v-model="filters.templ_type.$in" @on-change="search">

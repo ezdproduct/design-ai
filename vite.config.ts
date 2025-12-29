@@ -107,7 +107,7 @@ const config = ({ mode }) => {
       },
     },
     server: {
-      port: 3000,
+      port: 3002,
       open: true,
       proxy: {
         '/fontFile': {

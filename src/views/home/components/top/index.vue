@@ -9,7 +9,7 @@
       <Divider type="vertical" />
       <import-file></import-file>
       <Divider type="vertical" />
-      <Button type="text" to="/template" target="_blank">全部模板</Button>
+      <Button type="text" to="/template" target="_blank">{{ $t('templates') }}</Button>
       <Divider type="vertical" />
 
       <myTemplName></myTemplName>

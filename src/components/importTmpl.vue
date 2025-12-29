@@ -55,7 +55,7 @@
         </div>
         <Spin size="large" fix :show="pageLoading"></Spin>
 
-        <Divider plain v-if="isDownBottm">已经到底了</Divider>
+        <Divider plain v-if="isDownBottm">{{ $t('already_at_bottom') }}</Divider>
       </Scroll>
     </div>
   </div>
