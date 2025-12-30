@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import ElementsPanel from '@/components/panels/ElementsPanel';
 import TemplatesPanel from '@/components/panels/TemplatesPanel';
 import MaterialPanel from '@/components/panels/MaterialPanel';
-import MyMaterialPanel from '@/components/panels/MyMaterialPanel';
 import LayersPanel from '@/components/panels/LayersPanel';
 import TextPanel from '@/components/panels/TextPanel';
 import {
@@ -13,7 +12,6 @@ import {
   Type as TypeIcon,
   Layers as LayersIcon,
   Smile as SmileIcon,
-  User as UserIcon,
   ChevronLeft,
 } from 'lucide-react';
 
@@ -23,7 +21,6 @@ const MENU_ITEMS = [
   { key: 'fontStyle', name: 'Text', icon: TypeIcon },
   { key: 'material', name: 'Material', icon: SmileIcon },
   { key: 'layer', name: 'Layers', icon: LayersIcon },
-  { key: 'myMaterial', name: 'Mine', icon: UserIcon },
 ];
 
 const LeftSidebar = () => {
@@ -75,8 +72,6 @@ const LeftSidebar = () => {
             <LayersPanel />
           ) : activeMenu === 'material' ? (
             <MaterialPanel />
-          ) : activeMenu === 'myMaterial' ? (
-            <MyMaterialPanel />
           ) : (
             <div className="p-4">
               <h2 className="text-lg font-bold mb-4">
