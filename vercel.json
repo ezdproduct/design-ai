@@ -1,8 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm --filter next-editor build",
+  "buildCommand": "pnpm build",
   "outputDirectory": "next-editor/.next",
-  "installCommand": "pnpm install --frozen-lockfile",
+  "installCommand": "pnpm install",
   "framework": "nextjs",
   "regions": ["sin1"]
 }
