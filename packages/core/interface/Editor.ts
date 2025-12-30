@@ -1,4 +1,4 @@
-import type Editor from '@kuaitu/core';
+import type Editor from '../Editor';
 
 // IEditor类型包含插件实例，Editor不包含插件实例
 // eslint-disable-next-line @typescript-eslint/no-empty-interface

@@ -9,7 +9,7 @@
 import { fabric } from 'fabric';
 import QRCodeStyling from 'qr-code-styling';
 import { blobToBase64 } from '../utils/utils';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPlugin = Pick<QrCodePlugin, 'addQrCode' | 'setQrCode' | 'getQrCodeTypes'>;
 

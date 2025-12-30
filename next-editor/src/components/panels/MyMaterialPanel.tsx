@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useEditor } from '@/context/EditorContext';
 import axios from 'axios';
-import { Upload, Image as ImageIcon, FileText, Trash2, Plus, Loader2 } from 'lucide-react';
+import { Upload, Image as ImageIcon, FileText, Trash2, Plus, Loader2, User } from 'lucide-react';
 
 const API_HOST = process.env.NEXT_PUBLIC_APIHOST || 'https://github.kuaitu.cc';
 
@@ -122,7 +122,7 @@ const MyMaterialPanel = () => {
   if (!token) {
     return (
       <div className="p-8 text-center">
-        <UserIcon className="mx-auto mb-4 text-gray-300" size={48} />
+        <User className="mx-auto mb-4 text-gray-300" size={48} />
         <p className="text-gray-500 text-sm">Please login to see your materials.</p>
         {/* You could add a login button here if the app has a login flow */}
       </div>

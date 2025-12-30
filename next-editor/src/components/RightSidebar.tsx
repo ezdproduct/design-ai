@@ -25,7 +25,7 @@ const RightSidebar = () => {
     if (!editor) return;
 
     const updateSelection = () => {
-      const activeObject = editor.canvas.getActiveObject();
+      const activeObject = editor.fabricCanvas?.getActiveObject();
       if (activeObject) {
         setSelectedType(activeObject.type || 'object');
       } else {

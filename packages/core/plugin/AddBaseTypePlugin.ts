@@ -7,7 +7,7 @@
  */
 
 import { fabric } from 'fabric';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 import { v4 as uuid } from 'uuid';
 
 type IPlugin = Pick<AddBaseTypePlugin, 'addBaseType' | 'createImgByElement'>;

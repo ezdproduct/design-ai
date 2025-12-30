@@ -6,7 +6,6 @@
  * @Description: 工具文件
  */
 import { v4 as uuid } from 'uuid';
-import { useClipboard, useFileDialog, useBase64 } from '@vueuse/core';
 
 /**
  * @description: 图片文件转字符串
@@ -14,7 +13,12 @@ import { useClipboard, useFileDialog, useBase64 } from '@vueuse/core';
  * @return {String}
  */
 export function getImgStr(file: File | Blob): Promise<FileReader['result']> {
-  return useBase64(file).promise.value;
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
 }
 
 /**
@@ -28,11 +32,14 @@ export function selectFiles(options: {
   multiple?: boolean;
 }): Promise<FileList | null> {
   return new Promise((resolve) => {
-    const { onChange, open } = useFileDialog(options);
-    onChange((files) => {
-      resolve(files);
-    });
-    open();
+    const input = document.createElement('input');
+    input.type = 'file';
+    if (options.accept) input.accept = options.accept;
+    if (options.multiple) input.multiple = options.multiple;
+    input.onchange = () => {
+      resolve(input.files);
+    };
+    input.click();
   });
 }
 
@@ -56,11 +63,19 @@ export function insertImgFile(str: string) {
 /**
  * Copying text to the clipboard
  * @param source Copy source
- * @param options Copy options
  * @returns Promise that resolves when the text is copied successfully, or rejects when the copy fails.
  */
-export const clipboardText = (source: string, options?: Parameters<typeof useClipboard>[0]) => {
-  return useClipboard({ source, ...options }).copy();
+export const clipboardText = async (source: string) => {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(source);
+  }
+  // Fallback for older browsers
+  const textArea = document.createElement('textarea');
+  textArea.value = source;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textArea);
 };
 
 export function downFile(fileStr: string, fileType: string) {

@@ -2,20 +2,19 @@
 
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 import type { IEditor } from '@kuaitu/core';
-import { fabric } from 'fabric';
 
 interface EditorContextType {
   editor: IEditor | null;
   setEditor: (editor: IEditor) => void;
-  fabric: typeof fabric | null;
-  setFabric: (fabric: typeof fabric) => void;
+  fabric: any;
+  setFabric: (fabric: any) => void;
 }
 
 const EditorContext = createContext<EditorContextType | undefined>(undefined);
 
 export const EditorProvider = ({ children }: { children: ReactNode }) => {
   const [editor, setEditor] = useState<IEditor | null>(null);
-  const [fabricInstance, setFabric] = useState<typeof fabric | null>(null);
+  const [fabricInstance, setFabric] = useState<any>(null);
 
   return (
     <EditorContext.Provider value={{ editor, setEditor, fabric: fabricInstance, setFabric }}>

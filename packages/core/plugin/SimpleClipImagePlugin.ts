@@ -1,7 +1,7 @@
 import { fabric } from 'fabric';
 import { getPolygonVertices } from '../utils/math';
 import { get, set } from 'lodash-es';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPlugin = Pick<SimpleClipImagePlugin, 'addClipPathToImage' | 'removeClip'>;
 

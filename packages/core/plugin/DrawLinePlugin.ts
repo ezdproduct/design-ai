@@ -10,7 +10,7 @@ import { v4 as uuid } from 'uuid';
 import { fabric } from 'fabric';
 import Arrow from '../objects/Arrow';
 import ThinTailArrow from '../objects/ThinTailArrow';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPlugin = Pick<DrawLinePlugin, 'setLineType' | 'setMode'>;
 

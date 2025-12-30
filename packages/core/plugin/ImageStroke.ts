@@ -7,7 +7,7 @@
  * @Description: 图像描边
  */
 import { fabric } from 'fabric';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPlugin = Pick<ImageStrokePlugin, 'imageStrokeDraw'>;
 

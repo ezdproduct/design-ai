@@ -10,7 +10,7 @@ import { fabric } from 'fabric';
 import { isGroup } from '../utils/utils';
 import { v4 as uuid } from 'uuid';
 import { pick } from 'lodash-es';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 class GroupTextEditorPlugin implements IPluginTempl {
   static pluginName = 'GroupTextEditorPlugin';

@@ -11,7 +11,7 @@ import { fabric } from 'fabric';
 import FontFaceObserver from 'fontfaceobserver';
 import axios from 'axios';
 import { downFile } from '../utils/utils';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPlugin = Pick<FontPlugin, 'getFontList' | 'loadFont' | 'getFontJson' | 'downFontByJSON'>;
 

@@ -11,7 +11,7 @@ import verticalImg from '../assets/middlecontrol.svg?url';
 import horizontalImg from '../assets/middlecontrolhoz.svg?url';
 import edgeImg from '../assets/edgecontrol.svg?url';
 import rotateImg from '../assets/rotateicon.svg?url';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 /**
  * 实际场景: 在进行某个对象缩放的时候，由于fabricjs默认精度使用的是toFixed(2)。

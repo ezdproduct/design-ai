@@ -1,6 +1,6 @@
 import { fabric } from 'fabric';
 import { SelectMode } from '../eventType';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 import i18n from "@/language";
 
 type IPlugin = Pick<FlipPlugin, 'flip'>;

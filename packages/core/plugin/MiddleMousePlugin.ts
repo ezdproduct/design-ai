@@ -7,7 +7,7 @@
  */
 
 import { fabric } from 'fabric';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 class MiddleMousePlugin implements IPluginTempl {
   static pluginName = 'MiddleMousePlugin';

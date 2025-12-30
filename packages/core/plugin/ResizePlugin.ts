@@ -9,7 +9,7 @@
 import { fabric } from 'fabric';
 import { throttle } from 'lodash-es';
 import '../styles/resizePlugin.css';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPosition = 'left' | 'right' | 'top' | 'bottom';
 

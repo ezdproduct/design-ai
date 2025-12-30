@@ -9,7 +9,7 @@ import type {
   IPluginOption,
   IEditorHooksType,
   IPluginTempl,
-} from '@kuaitu/core';
+} from './interface/Editor';
 
 import Utils from './utils/utils';
 

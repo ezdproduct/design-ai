@@ -5,7 +5,7 @@
  * @LastEditTime: 2024-04-10 17:32:56
  * @Description: 控制条插件
  */
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 // 定义旋转光标样式，根据转动角度设定光标旋转
 function rotateIcon(angle: number) {

@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { useEditor } from '@/context/EditorContext';
 import axios from 'axios';
-import { v4 as uuid } from 'uuid';
 
 const API_HOST = process.env.NEXT_PUBLIC_APIHOST || 'https://github.kuaitu.cc';
 
@@ -74,7 +73,7 @@ const TextPanel = () => {
       setLoading(true);
       const json = item.attributes.json;
       // Ensure unique ID
-      json.id = uuid();
+      json.id = `text_${Date.now()}_${Math.random().toString(36).substring(2, 9)}`;
 
       const elType = json.type.charAt(0).toUpperCase() + json.type.slice(1);
       // @ts-ignore

@@ -9,7 +9,7 @@
 import { fabric } from 'fabric';
 import axios from 'axios';
 import qs from 'qs';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPlugin = Pick<
   MaterialPlugin,

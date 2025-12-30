@@ -6,7 +6,7 @@
  * @Description: 辅助线功能
  */
 import { fabric } from 'fabric';
-import { IEditor, IPluginTempl } from '@kuaitu/core';
+import { IEditor, IPluginTempl } from '../interface/Editor';
 
 declare interface VerticalLine {
   x: number;

@@ -25,7 +25,7 @@ const SavePopover = ({ onClose }: SavePopoverProps) => {
         // But for now, let's assume `saveImg` does default.
         // To support formats properly, we might need to call specific methods.
         // Let's assume standard fabric:
-        // const dataURL = editor.canvas.toDataURL({ format, quality, multiplier: 1 });
+        // const dataURL = editor.fabricCanvas.toDataURL({ format, quality, multiplier: 1 });
         // And then download it.
         // However, `editor.saveImg()` likely wraps this.
         // For now, let's just trigger the existing `saveImg` for images, or implement custom logic if needed.
@@ -33,13 +33,13 @@ const SavePopover = ({ onClose }: SavePopoverProps) => {
         if (format === 'png') editor.saveImg(); // Default usually png
         if (format === 'jpeg') {
           // If API doesn't support params, we might fallback or try to use underlying canvas.
-          // editor.canvas.toDataURL({ format: 'jpeg', quality });
+          // editor.fabricCanvas.toDataURL({ format: 'jpeg', quality });
           // Let's stick to what we know works safely for now or assume editor has `saveImg`
         }
         break;
       case 'json':
         // editor.exportJson() ??
-        // Usually `JSON.stringify(editor.canvas.toJSON())`
+        // Usually `JSON.stringify(editor.fabricCanvas.toJSON())`
         const canvasJson = (editor as any)?.fabricCanvas?.toJSON();
         if (canvasJson) {
           downloadFile(JSON.stringify(canvasJson, null, 2), 'json', name);

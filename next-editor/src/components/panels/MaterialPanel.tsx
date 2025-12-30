@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { useEditor } from '@/context/EditorContext';
 import axios from 'axios';
-import { v4 as uuid } from 'uuid';
 
 const API_HOST = process.env.NEXT_PUBLIC_APIHOST || 'https://github.kuaitu.cc';
 

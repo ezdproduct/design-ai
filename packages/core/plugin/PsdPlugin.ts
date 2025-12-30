@@ -9,7 +9,7 @@ import { fabric } from 'fabric';
 import { selectFiles } from '../utils/utils';
 import psdToJson from '../utils/psd';
 import Psd from '@webtoon/psd';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPlugin = Pick<PsdPlugin, 'insertPSD'>;
 

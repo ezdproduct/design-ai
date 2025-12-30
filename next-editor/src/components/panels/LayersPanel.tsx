@@ -48,9 +48,10 @@ const LayersPanel = () => {
   };
 
   const refreshLayers = () => {
-    if (!editor || !editor.canvas) return;
-    const objects = editor.canvas.getObjects().filter((item: any) => {
-      return !(item instanceof fabric.GuideLine || item.id === 'workspace');
+    if (!editor || !editor.fabricCanvas) return;
+    const objects = editor.fabricCanvas.getObjects().filter((item: any) => {
+      // Filter out guidelines and workspace background
+      return item.type !== 'GuideLine' && item.id !== 'workspace';
     });
 
     // Reverse to show top-most first
@@ -64,7 +65,7 @@ const LayersPanel = () => {
 
     setLayers(list);
 
-    const activeObject = editor.canvas.getActiveObject();
+    const activeObject = editor.fabricCanvas.getActiveObject();
     setActiveId(activeObject ? (activeObject as any).id : null);
   };
 
@@ -81,24 +82,27 @@ const LayersPanel = () => {
       setActiveId(active ? active.id : null);
     };
 
-    editor.canvas.on('after:render', handleRender);
-    editor.canvas.on('selection:created', handleSelection);
-    editor.canvas.on('selection:updated', handleSelection);
-    editor.canvas.on('selection:cleared', () => setActiveId(null));
+    const canvas = editor.fabricCanvas;
+    if (!canvas) return;
+
+    canvas.on('after:render', handleRender);
+    canvas.on('selection:created', handleSelection);
+    canvas.on('selection:updated', handleSelection);
+    canvas.on('selection:cleared', () => setActiveId(null));
 
     return () => {
-      editor.canvas.off('after:render', handleRender);
-      editor.canvas.off('selection:created', handleSelection);
-      editor.canvas.off('selection:updated', handleSelection);
-      editor.canvas.off('selection:cleared');
+      canvas.off('after:render', handleRender);
+      canvas.off('selection:created', handleSelection);
+      canvas.off('selection:updated', handleSelection);
+      canvas.off('selection:cleared');
     };
   }, [editor]);
 
   const handleSelect = (layer: any) => {
-    if (!editor) return;
-    editor.canvas.discardActiveObject();
-    editor.canvas.setActiveObject(layer.object);
-    editor.canvas.requestRenderAll();
+    if (!editor || !editor.fabricCanvas) return;
+    editor.fabricCanvas.discardActiveObject();
+    editor.fabricCanvas.setActiveObject(layer.object);
+    editor.fabricCanvas.requestRenderAll();
     setActiveId(layer.id);
   };
 

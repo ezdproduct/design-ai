@@ -8,7 +8,7 @@
 
 import { fabric } from 'fabric';
 import JsBarcode from 'jsbarcode';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPlugin = Pick<BarCodePlugin, 'addBarcode' | 'setBarcode' | 'getBarcodeTypes'>;
 

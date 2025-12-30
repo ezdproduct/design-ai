@@ -6,7 +6,7 @@
  * @Description: 拖拽插件
  */
 
-import { IEditor, IPluginTempl } from '@kuaitu/core';
+import { IEditor, IPluginTempl } from '../interface/Editor';
 
 type IPlugin = Pick<DringPlugin, 'startDring' | 'endDring'>;
 

@@ -7,7 +7,7 @@
  */
 import { fabric } from 'fabric';
 import { SelectEvent, SelectMode } from '../eventType';
-import type { IEditor, IPluginTempl } from '@kuaitu/core';
+import type { IEditor, IPluginTempl } from '../interface/Editor';
 import lockImg from '../assets/lock.svg?url';
 // import lockImg from '../assets/rotateicon.svg?url';
 // import unlockImg from '../assets/unlock.svg?url'
